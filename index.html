@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 학습 분석 리포트 - 김윤구 학생</title>
+    <!-- Tailwind CSS CDN 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN 로드 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Google Fonts (Inter, Noto Sans KR) 로드 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 기본 바디 스타일 및 폰트 설정 */
+        body {
+            font-family: 'Noto Sans KR', 'Inter', sans-serif;
+            background-color: #f9fafb; /* 더 부드러운 배경색 */
+            color: #1f2937; /* 더 높은 명암비의 텍스트 색상 */
+        }
+        /* 섹션 카드 공통 스타일 */
+        .section-card {
+            background-color: white;
+            border-radius: 0.75rem; /* 12px */
+            padding: 1.5rem; /* 24px */
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            margin-bottom: 1.5rem; /* 24px */
+        }
+        /* 태그 스타일 */
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <main class="max-w-3xl mx-auto p-4 md:p-6">
+        <!-- 리포트 제목 및 기간 섹션 -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">김윤구 학생 월간 리포트</h1>
+            <p class="text-md md:text-lg text-gray-500 mt-2">2025년 7월 학습 분석</p>
+            <div class="mt-3 text-sm text-gray-400">
+                <p>분석 기간: 2025년 7월 1일 ~ 7월 31일</p>
+            </div>
+        </div>
+
+        <!-- 1. 종합 요약 -->
+        <section class="section-card">
+            <h2 class="text-xl font-bold mb-3 text-indigo-600">🚀 7월 학습 요약</h2>
+            <p class="text-gray-600 mb-4">
+                지난 한 달간 윤구 학생은 <strong class="text-indigo-600">수학, 과학</strong> 과목을 중심으로 학습했습니다. 
+                7월 4일 기말고사가 끝난 뒤에도 윤구 학생은 <strong class="text-gray-800">1학기의 학습을 멋지게 마무리</strong>했습니다.  
+                짧은 휴식 후 새롭게 마음을 다잡고 <strong class="text-gray-800">2학기 예습을 힘차게 시작</strong>한 점을 크게 <strong class="text-gray-800">칭찬하고 응원합니다.</strong>👍
+            </p>
+            <div class="flex justify-around text-center text-sm">
+                <div>
+                    <p class="font-bold text-2xl text-indigo-500">2</p>
+                    <p class="text-gray-500">학습 과목</p>
+                </div>
+                <div>
+                    <p class="font-bold text-2xl text-indigo-500">28<span class="text-lg">강</span></p>
+                    <p class="text-gray-500">총 수강</p>
+                </div>
+                <div>
+                    <p class="font-bold text-2xl text-indigo-500">1<span class="text-lg">회</span></p>
+                    <p class="text-gray-500">평가 응시</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 과목별 상세 분석 -->
+        <h2 class="text-2xl font-bold mb-4 mt-10 text-center text-gray-800">학습 내용 분석</h2>
+
+        <!-- 수학 분석 카드 -->
+        <div class="section-card">
+            <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">🧮 수학</h3>
+                <span class="tag bg-blue-100 text-blue-800">개념 수강 유형</span>
+            </div>
+            <div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-gray-700">학습 현황</h4>
+                    <p class="text-sm text-gray-600 mt-1">
+                        <strong class="text-red-500">'삼각형의 성질'</strong> 단원 평가를 응시하여, 자신의 이해도를 점검했어요. 앞으로도 <strong class="text-blue-600">지금처럼 수강 후 학습 이해도를 점검하는 습관</strong>을 만드는 자기주도적 학습을 이어가세요 😊
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-700">AI 학습 제안</h4>
+                    <p class="text-sm text-gray-600 mt-1">
+                        중학교 2학년 도형 단원은 엠베스트 회원들이 공통적으로 어려워하는 시기입니다. <strong class="text-blue-600">닮음의 뜻·조건과 비의 관계를 정확히 쓰고 계산하는 것 </strong>에 집중하여 <strong class="text-red-500">'도형의 닮음'</strong> 단원을 대비하는 것을 추천합니다.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 과학 분석 카드 -->
+        <div class="section-card">
+            <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">🔬 과학</h3>
+                <span class="tag bg-green-100 text-green-800">해설 수강 유형</span>
+            </div>
+            <div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-gray-700">학습 현황</h4>
+                    <p class="text-sm text-gray-600 mt-1">
+                        <strong class="text-red-500">'동물과 에너지', '물질의 특성'</strong> 단원을 문제 풀이 중심으로 수강했네요. <strong class="text-blue-600">자신에게 필요한 부분만 수강하는 똑똑한 학습패턴</strong>이 드러납니다. 😍
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-700">AI 학습 제안</h4>
+                    <p class="text-sm text-gray-600 mt-1">
+                        <strong class="text-red-500">'물질의 특성'</strong> 단원은 순물질, 혼합물의 구분 개념이 추상적이여서 어려울 수 있는 단원입니다. 아래 체크리스트로 스스로 점검해보고, 부족한 부분은 개념 수강으로 보충하는 것을 추천합니다.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg mt-3 space-y-2">
+                     <label class="flex items-center text-sm"><input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mr-2"><span>밀도를 이용해 혼합물을 분리하는 방법을 설명할 수 있나요?</span></label>
+                     <label class="flex items-center text-sm"><input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mr-2"><span>온도와 압력에 따른 기체의 용해도를 설명할 수 있나요?</span></label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. 학습 습관 분석 -->
+        <h2 class="text-2xl font-bold mb-4 mt-10 text-center text-gray-800">학습 습관 분석</h2>
+
+        <!-- 시간대별 학습 집중도 -->
+        <div class="section-card">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">⏰ 시간대별 수강 시간</h3>
+            <div class="w-full h-64 md:h-80">
+                <canvas id="studyHabitsChart"></canvas>
+            </div>
+            <div class="mt-4 bg-indigo-50 p-4 rounded-lg">
+                <p class="font-semibold text-indigo-800">💡 AI 학습 코칭</p>
+                <p class="text-sm text-indigo-700 mt-2">
+                    윤구 학생은 주로 <strong class="font-bold">저녁 6시 ~ 8시</strong>에 인강을 수강합니다. 8시에 수강이 끝난 뒤에도, 시간을 내서 <strong class="font-bold">배운 내용을 정리하는 것이 중요해요!</strong> 오전 시간을 활용하는 친구들도 많으니, 아침 자투리 시간을 활용하는 것도 고려해보세요. <strong class="font-bold">예약/출석을 통해 시간 관리와 배틀을 통해 집중해서 공부하는 스윗타임을 추천합니다!</strong> 
+                </p>
+                <div class="text-center mt-4">
+                    <a href="#" class="inline-block bg-yellow-400 text-yellow-900 font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition-colors text-sm">
+                        스윗타임 페이지 바로가기
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+
+    <footer class="text-center py-6 text-gray-500 text-sm">
+        <p>&copy; 2025 Megastudy. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            // --- 시간대별 학습 집중도 라인 차트 렌더링 ---
+            const renderHabitsChart = () => {
+                const ctx = document.getElementById('studyHabitsChart')?.getContext('2d');
+                if (!ctx) return;
+
+                // 그라데이션 생성
+                const gradient = ctx.createLinearGradient(0, 0, 0, 300);
+                gradient.addColorStop(0, 'rgba(79, 70, 229, 0.4)');
+                gradient.addColorStop(1, 'rgba(79, 70, 229, 0)');
+
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['08시', '10시', '12시', '14시', '16시', '18시', '20시', '22시'],
+                        datasets: [{
+                            label: '나의 학습 집중도',
+                            data: [5, 4, 12, 19, 27, 30, 19, 8], 
+                            borderColor: '#4f46e5', // Indigo
+                            backgroundColor: gradient,
+                            fill: true,
+                            tension: 0.4,
+                            borderWidth: 3,
+                            pointBackgroundColor: '#4f46e5',
+                            pointRadius: 4,
+                            pointHoverRadius: 6,
+                        }, {
+                            label: '전체 동학년 평균',
+                            data: [16, 24, 12, 16, 20, 28, 32, 20],
+                            borderColor: '#a5b4fc', // Light Indigo
+                            fill: false,
+                            tension: 0.4,
+                            borderWidth: 2,
+                            borderDash: [5, 5],
+                            pointRadius: 0,
+                        }, {
+                            label: '스윗타임 이용자 평균',
+                            data: [25, 33, 22, 25, 30, 38, 42, 31], 
+                            borderColor: '#facc15', // Yellow-400
+                            backgroundColor: '#facc15',
+                            fill: false,
+                            tension: 0.4,
+                            borderWidth: 3, // 굵게 표시
+                            pointRadius: 4,
+                            pointBackgroundColor: '#facc15',
+                            pointHoverRadius: 6,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'bottom', labels: { usePointStyle: true } },
+                            tooltip: {
+                                mode: 'index',
+                                intersect: false,
+                                callbacks: {
+                                    label: function(context) { return ` ${context.dataset.label}: ${context.raw}분`; }
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: {
+                                    drawBorder: false,
+                                    color: '#e5e7eb'
+                                },
+                                ticks: {
+                                    stepSize: 10, // Y축 단위를 10으로 설정
+                                    callback: function(value) {
+                                        return value + '분';
+                                    }
+                                }
+                            },
+                            x: {
+                                grid: {
+                                    display: false
+                                }
+                            }
+                        }
+                    }
+                });
+            };
+            
+            renderHabitsChart();
+        });
+    </script>
+</body>
+</html>
